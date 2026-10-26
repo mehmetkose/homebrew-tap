@@ -10,11 +10,11 @@ class Lokal < Formula
   # One prebuilt tarball per architecture. `brew audit --strict` doesn't allow
   # url/sha256 inside on_arm/on_intel blocks, so this is a plain conditional.
   if Hardware::CPU.arm?
-    url "https://github.com/mehmetkose/lokal/releases/download/v0.3.0/lokal-0.3.0-aarch64-apple-darwin.tar.gz"
-    sha256 "3a2875996a2b729ce746ad89be2da67a3923f983634cdad6811ec6f202f20336"
+    url "https://github.com/mehmetkose/lokal/releases/download/v0.4.0/lokal-0.4.0-aarch64-apple-darwin.tar.gz"
+    sha256 "29289b5a6f5d33f8bd562ee6c62739d6249954b7a998ff923fa2dc1c67ee6c29"
   else
-    url "https://github.com/mehmetkose/lokal/releases/download/v0.3.0/lokal-0.3.0-x86_64-apple-darwin.tar.gz"
-    sha256 "9cd0b2e1eef7f06b2b679ceb70a248df45d6e27566dca8e4aa8c2404ba303ecb"
+    url "https://github.com/mehmetkose/lokal/releases/download/v0.4.0/lokal-0.4.0-x86_64-apple-darwin.tar.gz"
+    sha256 "c527c883c8062757a31a27b15eff37bbb70198c19e902bba715167e71c2bcf2c"
   end
 
   def install
