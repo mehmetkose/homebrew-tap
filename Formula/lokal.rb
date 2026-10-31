@@ -10,17 +10,17 @@ class Lokal < Formula
   # (FormulaAudit/ComponentsOrder), and Homebrew leaves class-level OS conditionals
   # to taps (FormulaAudit/OnSystemConditionals), so this is a plain conditional.
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/mehmetkose/lokal/releases/download/v0.5.1/lokal-0.5.1-aarch64-apple-darwin.tar.gz"
-    sha256 "29dc23b232c85e04e3a002018f14b749a985219e68ba979b88a12187b5564ba3"
+    url "https://github.com/mehmetkose/lokal/releases/download/v0.5.2/lokal-0.5.2-aarch64-apple-darwin.tar.gz"
+    sha256 "94b011d2316861e13def34f611edc3dd777fd3562dc3f6545d7990f0e1c9fc67"
   elsif OS.mac?
-    url "https://github.com/mehmetkose/lokal/releases/download/v0.5.1/lokal-0.5.1-x86_64-apple-darwin.tar.gz"
-    sha256 "019ce0c882ff85d4aad89e3eb68621f69a4c067d3701d1460fd18fbc1ce51dcb"
+    url "https://github.com/mehmetkose/lokal/releases/download/v0.5.2/lokal-0.5.2-x86_64-apple-darwin.tar.gz"
+    sha256 "4b7d4018f4419f824cc9c9007f81f9ae3e53936fcd854818771b2483e907a81c"
   elsif Hardware::CPU.arm?
-    url "https://github.com/mehmetkose/lokal/releases/download/v0.5.1/lokal-0.5.1-aarch64-unknown-linux-gnu.tar.gz"
-    sha256 "cc84c6eeee55b561cdaafb61d348726b6e7f6886f1db570504b5386a1a6e1a7f"
+    url "https://github.com/mehmetkose/lokal/releases/download/v0.5.2/lokal-0.5.2-aarch64-unknown-linux-gnu.tar.gz"
+    sha256 "690a9c81212dd090a93588be23e963928028d3cd800bcd2e657c6171c422ac7e"
   else
-    url "https://github.com/mehmetkose/lokal/releases/download/v0.5.1/lokal-0.5.1-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "3f827f946845f7cd0ada90b43cbfe5972aa86e5b6256ae01de354a435d2fed89"
+    url "https://github.com/mehmetkose/lokal/releases/download/v0.5.2/lokal-0.5.2-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "d83582f7dfbb949d758094de4e5e2c952ae074d2dfe46328221d409070a671c6"
   end
 
   on_macos do
